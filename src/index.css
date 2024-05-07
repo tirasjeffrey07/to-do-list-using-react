@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #510084;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff00c37d; 
+  border-radius: 6px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5100a4;
+}
+
+
+* {
+  font-weight: 200;
+  font-family: "Nunito", sans-serif;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(45deg, #9f016d, #3f008d);
+}
+
+.to-do-list {
+  text-align: center;
+  margin: 5rem 0 5rem 0;
+}
+h1 {
+  
+  font-size: 4rem;
+  color: white;
+}
+
+button {
+  border: none;
+  color: white;
+  font-weight: 300;
+  padding: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.add-button {
+  font-size: 1.5rem;
+  min-width: 7rem;
+  background-color: #04fc00ae;
+}
+.add-button:hover {
+  background-color: #04d700;
+}
+.delete-button {
+  min-width: 5rem;
+  background-color: #00000042
+}
+.delete-button:hover {
+  background-color: #ff1100;
+}
+.move-button {
+  min-width: 5rem;
+  background-color: #00000042;
+}
+.move-button:hover {
+  background-color: #2f87ed;
+}
+
+input[type="text"] {
+  background-color: #6e6e6e52;
+  width: 30vw;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  border: 2px solid #cfcfcf34;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+input[type="text"]:hover {
+  transition: all 0.4s ease;
+  background-color: #b1b1b161;
+  border: 2px solid #01fe0d;
+}
+input[type="text"]:focus{
+  background-color: #b1b1b161;
+  outline: none;
+}
+
+input[type="text"]::placeholder{
+  color: rgba(255, 255, 255, 0.527);
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  min-width: 50vw;
+  max-width: 80vw;
+  margin: 2rem 0 1rem 0;
+  color: rgb(255, 255, 255);
+  font-size: 1.9rem;
+  font-weight: 200;
+  padding: 1.3rem;
+  background-color: #00000038;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.6s ease;
+}
+
+li:hover{
+  background-color: #bfbfbf35;
+  transition: background-color 0.4s ease;
+}
+
+.text {
+  flex: 1;
+  cursor:default;
+}
+
+.delete-button,
+.move-button {
+  padding: 12px;
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+}
